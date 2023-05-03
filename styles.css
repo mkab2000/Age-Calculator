@@ -1,0 +1,137 @@
+body  {
+    background: #f0f0f0;
+    font-family: Poppins;
+    font-weight: bold;
+
+}
+
+#calc {
+    width: 600px;
+    height: 500px;
+    margin: 100px auto;
+    background: white;
+    border-radius: 25px;
+    border-bottom-right-radius: 150px;
+    padding: 50px;
+}
+#calc > div {
+    margin: 10px 0;
+}
+#values {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-between;
+}
+p {
+    color: gray;
+}
+input {
+    height: 50px;
+    width: 120px;
+    font-size: 30px;
+    padding-left: 15px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.invalid-input {
+    font-size: 10px;
+    color:red;
+    /* display: none; */
+}
+
+#submit {
+    display: inline-block;
+    vertical-align: middle;
+    /* flex-direction: row; */
+    width: 100%;
+}
+#breaker {
+    width: 80px;
+    border: solid 1px lightgray;
+    width: auto;
+    margin-top: 40px;
+}
+#button {
+    float: right;
+    background: #7f5df5;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+img {
+    width: 35px;
+}
+
+#answer {
+    margin-top: -30px;
+}
+#answer h1 {
+    margin-top: -20px;
+}
+h1 {
+    font-size: 70px;
+    margin: 0;
+    font-weight: 500;
+}
+span {
+    color: #7f5cf5;
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        /* background-color: red; */
+    }
+    #calc {
+        width: auto;
+        padding: 20px;
+        margin: 20px 0;
+        border-bottom-right-radius: 100px;
+    }
+    #calc > div {
+        margin: 20px 0;
+    }
+    #calc > div:nth-of-type(1){
+        margin-top: 0;
+    }
+    #values {
+        width: auto;
+    }
+    input {
+        width: 70px;
+        font-size: 20px;
+    }
+    .invalid-input {
+        margin-top: 10px;
+        font-size: 9px;
+    }
+    
+    #answer {
+        margin-top: 30px;
+    }
+    #answer h1:nth-of-type(1) {
+        margin-top: 10px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    p {
+        margin-top: 0;
+        font-size: 12px;
+    }
+}
+
+@font-face { font-family: Poppins; src: url('assets/fonts/Poppins-Regular.ttf'); } 
+@font-face { font-family: Poppins; font-style: italic; src: url('assets/fonts/Poppins-Regular.ttf'); } 
+@font-face { font-family: Poppins; font-weight: bold; src: url('assets/fonts/Poppins-Bold.ttf');}
+@font-face { font-family: Poppins; font-style: italic; font-weight: bold; src: url('assets/fonts/Poppins-BoldItalic.ttf');}
+@font-face { font-family: Poppins; font-weight: 500; src: url('assets/fonts/Poppins-ExtraBold.ttf');}
+@font-face { font-family: Poppins; font-style: italic; font-weight: 500; src: url('assets/fonts/Poppins-ExtraBoldItalic.ttf');}

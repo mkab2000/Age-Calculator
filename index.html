@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="script.js"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div id="calc">
+    <div id="values">
+      <div class="field">
+        <p class="date-header">DAY</p>
+        <input id="input-day" class="input" type="text" placeholder="DD">
+        <!-- <p id="empty-day" class="invalid-input">This field is required</p> -->
+        <p id="invalid-day" class="invalid-input"></p>
+      </div>
+      <div class="field">
+        <p class="date-header">MONTH</p>
+        <input id="input-month" class="input" type="text" placeholder="MM">
+        <!-- <p id="empty-month" class="invalid-input">This field is required</p> -->
+        <p id="invalid-month" class="invalid-input"></p>
+      </div>
+      <div class="field">
+        <p class="date-header">YEAR</p>
+        <input id="input-year" class="input" type="text" placeholder="YYYY">
+        <!-- <p id="empty-year" class="invalid-input">This field is required</p> -->
+        <p id="invalid-year" class="invalid-input"></p>
+      </div>
+    </div>
+    <div id="submit">
+      <div id="button"><img src="assets/images/icon-arrow.svg"></div>
+      <div id="breaker"></div>
+
+    </div>
+
+    <div id="answer">
+      <h1><i><span id="answer-year">--</span> years</i></h1>
+      <h1><i><span id="answer-month">--</span> months</i></h1>
+      <h1><i><span id="answer-day">--</span> days</i></h1>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/mkab2000" target="_blank">Miras Kabdygali</a>.
+  </div>
+</body>
+</html>
