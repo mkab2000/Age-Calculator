@@ -115,11 +115,9 @@ function checkValid(day, month, year) {
         document.getElementById("invalid-day").innerText = "Must be a valid day";
     }
 
-    var date1 = new Date(curYear, curMonth, curDay);
-    var date2 = new Date(year, month, day);
-    // console.log(date1)
-    // console.log(date2)
-    var diff = new Date(date1.getTime() - date2.getTime());
+    const date1 = new Date(curYear, curMonth, curDay);
+    const date2 = new Date(year, month, day);
+    const diff = new Date(date1.getTime() - date2.getTime());
     day = diff.getUTCDate() - 1;
     month = diff.getUTCMonth();
     year = diff.getUTCFullYear() - 1970;
